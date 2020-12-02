@@ -105,7 +105,7 @@ class BaseTrainer:
             
             #self._train_fastadt(epoch)
 
-            results = self._train_CR1(epoch)
+            results = self._train_CR(epoch)
             
             
             if self.do_validation and epoch % self.config['trainer']['val_per_epochs'] == 0:
